@@ -8,6 +8,6 @@ lib.content {
   table = tt_content
   select {
     orderBy = sorting
-    where = colPos NOT IN (201,202)
+    where = colPos NOT IN (201,202,203)
   }
 }
