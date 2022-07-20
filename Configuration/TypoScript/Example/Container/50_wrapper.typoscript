@@ -1,0 +1,31 @@
+tt_content.50_wrapper < lib.contentElement
+tt_content.50_wrapper {
+  fields {
+    content {
+      fields {
+        left = TEXT
+        left {
+          dataProcessing {
+            10 = Fanor51\HeadlesContainerSupport\DataProcessing\HeadlessContainerProcessor
+            10 {
+              colPos = 201
+              as = left
+            }
+          }
+        }
+
+        right = TEXT
+        right {
+          dataProcessing {
+            10 = Fanor51\HeadlesContainerSupport\DataProcessing\HeadlessContainerProcessor
+            10 {
+              colPos = 202
+              as = right
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
