@@ -1,4 +1,4 @@
-# Headless Container Support
+# Headless Container Support (For TYPO3 v11)
 First of all, this is WIP. 
 
 ## Install 
