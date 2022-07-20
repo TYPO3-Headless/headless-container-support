@@ -1,0 +1,13 @@
+# PRELOAD EXTENSIONS SETTINGS
+@import 'EXT:headless/Configuration/TypoScript/'
+
+# Overwrite the default lib.content from the headless extension with added colPos where in YOUR Config Extension
+# Add the colPos IDS from your Container Configuration to the where
+lib.content = CONTENT_JSON
+lib.content {
+  table = tt_content
+  select {
+    orderBy = sorting
+    where = colPos NOT IN (201,202)
+  }
+}
