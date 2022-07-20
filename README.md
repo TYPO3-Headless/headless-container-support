@@ -45,3 +45,5 @@ An example for this you can find here: ``Example/TCA/Overrides/tt_content.php``
 In the end it should look like this:
 
 ![image description](Docs/Assets/img.png)
+
+A complete json example is under: ``Docs/Json/Example.json``

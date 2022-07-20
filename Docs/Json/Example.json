@@ -190,7 +190,7 @@
                     "1": {
                       "columns": {
                         "1": {
-                          "publicUrl": "https:\/\/api.fordkoegler-headless.ddev.site\/fileadmin\/user_upload\/512_Ford_Mustang_Bullitt.jpg",
+                          "publicUrl": "https:\/\/api.headless.ddev.site\/fileadmin\/user_upload\/image.jpg",
                           "properties": {
                             "title": null,
                             "alternative": null,
@@ -199,8 +199,8 @@
                             "linkData": null,
                             "mimeType": "image\/jpeg",
                             "type": "image",
-                            "filename": "512_Ford_Mustang_Bullitt.jpg",
-                            "originalUrl": "\/fileadmin\/user_upload\/512_Ford_Mustang_Bullitt.jpg",
+                            "filename": "image.jpg",
+                            "originalUrl": "\/fileadmin\/user_upload\/image.jpg",
                             "uidLocal": 40322,
                             "fileReferenceUid": 6088,
                             "size": "422 KB",
@@ -316,6 +316,86 @@
                   },
                   "rows": []
                 }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 6764,
+        "type": "33_wrapper",
+        "colPos": 1,
+        "categories": "",
+        "appearance": {
+          "layout": "default",
+          "frameClass": "default",
+          "spaceBefore": "",
+          "spaceAfter": ""
+        },
+        "content": {
+          "left": [
+            {
+              "id": 6765,
+              "type": "text",
+              "colPos": 201,
+              "categories": "",
+              "appearance": {
+                "layout": "default",
+                "frameClass": "none",
+                "spaceBefore": "",
+                "spaceAfter": ""
+              },
+              "content": {
+                "header": "Test Left",
+                "subheader": "",
+                "headerLayout": 0,
+                "headerPosition": "",
+                "headerLink": "",
+                "bodytext": ""
+              }
+            }
+          ],
+          "mid": [
+            {
+              "id": 6766,
+              "type": "text",
+              "colPos": 202,
+              "categories": "",
+              "appearance": {
+                "layout": "default",
+                "frameClass": "none",
+                "spaceBefore": "",
+                "spaceAfter": ""
+              },
+              "content": {
+                "header": "Test Left",
+                "subheader": "",
+                "headerLayout": 0,
+                "headerPosition": "",
+                "headerLink": "",
+                "bodytext": ""
+              }
+            }
+          ],
+          "right": [
+            {
+              "id": 6767,
+              "type": "text",
+              "colPos": 203,
+              "categories": "",
+              "appearance": {
+                "layout": "default",
+                "frameClass": "none",
+                "spaceBefore": "",
+                "spaceAfter": ""
+              },
+              "content": {
+                "header": "Test Left",
+                "subheader": "",
+                "headerLayout": 0,
+                "headerPosition": "",
+                "headerLink": "",
+                "bodytext": ""
               }
             }
           ]
