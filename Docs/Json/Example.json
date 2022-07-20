@@ -1,0 +1,326 @@
+{
+  "id": 636,
+  "type": "Standard",
+  "slug": "\/headless-container-support",
+  "media": [],
+  "meta": {
+    "title": "headless-container-support",
+    "subtitle": "",
+    "abstract": "",
+    "description": "",
+    "keywords": "",
+    "canonical": "",
+    "robots": {
+      "noIndex": false,
+      "noFollow": false
+    },
+    "author": "",
+    "authorEmail": "",
+    "ogTitle": "headless-container-support",
+    "ogDescription": "",
+    "ogImage": null,
+    "twitterTitle": "headless-container-support",
+    "twitterDescription": "",
+    "twitterCard": "summary",
+    "twitterImage": null
+  },
+  "categories": "",
+  "breadcrumbs": [
+    {
+      "title": "Startseite",
+      "link": "\/",
+      "target": "",
+      "active": 1,
+      "current": 0,
+      "spacer": 0,
+      "hasSubpages": 1
+    },
+    {
+      "title": "headless-container-support",
+      "link": "\/headless-container-support\/",
+      "target": "",
+      "active": 1,
+      "current": 1,
+      "spacer": 0,
+      "hasSubpages": 0
+    }
+  ],
+  "appearance": {
+    "layout": "layout-0",
+    "backendLayout": "2"
+  },
+  "content": {
+    "colPos1": [
+      {
+        "id": 6763,
+        "type": "textpic",
+        "colPos": 1,
+        "categories": "",
+        "appearance": {
+          "layout": "default",
+          "frameClass": "none",
+          "spaceBefore": "",
+          "spaceAfter": ""
+        },
+        "content": {
+          "header": "test",
+          "subheader": "",
+          "headerLayout": 0,
+          "headerPosition": "",
+          "headerLink": "",
+          "enlargeImageOnClick": false,
+          "bodytext": "<p>test<\/p>\n",
+          "gallery": {
+            "position": {
+              "horizontal": "right",
+              "vertical": "intext",
+              "noWrap": true
+            },
+            "width": 1600,
+            "count": {
+              "files": 1,
+              "columns": 1,
+              "rows": 1
+            },
+            "columnSpacing": 10,
+            "border": {
+              "enabled": false,
+              "width": 2,
+              "padding": 0
+            },
+            "rows": {
+              "1": {
+                "columns": {
+                  "1": {
+                    "publicUrl": "https:\/\/api.headless.ddev.site\/fileadmin\/user_upload\/image.jpg",
+                    "properties": {
+                      "title": null,
+                      "alternative": null,
+                      "description": null,
+                      "link": null,
+                      "linkData": null,
+                      "mimeType": "image\/jpeg",
+                      "type": "image",
+                      "filename": "image.jpg",
+                      "originalUrl": "\/fileadmin\/user_upload\/image.jpg",
+                      "uidLocal": 40322,
+                      "fileReferenceUid": 6089,
+                      "size": "422 KB",
+                      "dimensions": {
+                        "width": 2953,
+                        "height": 1969
+                      },
+                      "cropDimensions": {
+                        "width": 2953,
+                        "height": 1969
+                      },
+                      "crop": {
+                        "default": {
+                          "cropArea": {
+                            "x": 0,
+                            "y": 0,
+                            "width": 1,
+                            "height": 1
+                          },
+                          "selectedRatio": "NaN",
+                          "focusArea": null
+                        }
+                      },
+                      "autoplay": null,
+                      "extension": null
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": 6759,
+        "type": "50_wrapper",
+        "colPos": 1,
+        "categories": "",
+        "appearance": {
+          "layout": "default",
+          "frameClass": "default",
+          "spaceBefore": "",
+          "spaceAfter": ""
+        },
+        "content": {
+          "left": [
+            {
+              "id": 6762,
+              "type": "textpic",
+              "colPos": 201,
+              "categories": "",
+              "appearance": {
+                "layout": "default",
+                "frameClass": "none",
+                "spaceBefore": "",
+                "spaceAfter": ""
+              },
+              "content": {
+                "header": "test",
+                "subheader": "",
+                "headerLayout": 0,
+                "headerPosition": "",
+                "headerLink": "",
+                "enlargeImageOnClick": false,
+                "bodytext": "<p>test<\/p>\n",
+                "gallery": {
+                  "position": {
+                    "horizontal": "right",
+                    "vertical": "intext",
+                    "noWrap": true
+                  },
+                  "width": 1600,
+                  "count": {
+                    "files": 1,
+                    "columns": 1,
+                    "rows": 1
+                  },
+                  "columnSpacing": 10,
+                  "border": {
+                    "enabled": false,
+                    "width": 2,
+                    "padding": 0
+                  },
+                  "rows": {
+                    "1": {
+                      "columns": {
+                        "1": {
+                          "publicUrl": "https:\/\/api.fordkoegler-headless.ddev.site\/fileadmin\/user_upload\/512_Ford_Mustang_Bullitt.jpg",
+                          "properties": {
+                            "title": null,
+                            "alternative": null,
+                            "description": null,
+                            "link": null,
+                            "linkData": null,
+                            "mimeType": "image\/jpeg",
+                            "type": "image",
+                            "filename": "512_Ford_Mustang_Bullitt.jpg",
+                            "originalUrl": "\/fileadmin\/user_upload\/512_Ford_Mustang_Bullitt.jpg",
+                            "uidLocal": 40322,
+                            "fileReferenceUid": 6088,
+                            "size": "422 KB",
+                            "dimensions": {
+                              "width": 2953,
+                              "height": 1969
+                            },
+                            "cropDimensions": {
+                              "width": 2953,
+                              "height": 1969
+                            },
+                            "crop": {
+                              "default": {
+                                "cropArea": {
+                                  "x": 0,
+                                  "y": 0,
+                                  "width": 1,
+                                  "height": 1
+                                },
+                                "selectedRatio": "NaN",
+                                "focusArea": null
+                              }
+                            },
+                            "autoplay": null,
+                            "extension": null
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "id": 6760,
+              "type": "textpic",
+              "colPos": 201,
+              "categories": "",
+              "appearance": {
+                "layout": "default",
+                "frameClass": "none",
+                "spaceBefore": "",
+                "spaceAfter": ""
+              },
+              "content": {
+                "header": "test",
+                "subheader": "",
+                "headerLayout": 0,
+                "headerPosition": "",
+                "headerLink": "",
+                "enlargeImageOnClick": false,
+                "bodytext": "<p>test<\/p>\n",
+                "gallery": {
+                  "position": {
+                    "horizontal": "right",
+                    "vertical": "intext",
+                    "noWrap": true
+                  },
+                  "width": 1600,
+                  "count": {
+                    "files": 0,
+                    "columns": 1,
+                    "rows": 0
+                  },
+                  "columnSpacing": 10,
+                  "border": {
+                    "enabled": false,
+                    "width": 2,
+                    "padding": 0
+                  },
+                  "rows": []
+                }
+              }
+            }
+          ],
+          "right": [
+            {
+              "id": 6761,
+              "type": "textpic",
+              "colPos": 202,
+              "categories": "",
+              "appearance": {
+                "layout": "default",
+                "frameClass": "none",
+                "spaceBefore": "",
+                "spaceAfter": ""
+              },
+              "content": {
+                "header": "test",
+                "subheader": "",
+                "headerLayout": 0,
+                "headerPosition": "",
+                "headerLink": "",
+                "enlargeImageOnClick": false,
+                "bodytext": "<p>test<\/p>\n",
+                "gallery": {
+                  "position": {
+                    "horizontal": "right",
+                    "vertical": "intext",
+                    "noWrap": true
+                  },
+                  "width": 1600,
+                  "count": {
+                    "files": 0,
+                    "columns": 1,
+                    "rows": 0
+                  },
+                  "columnSpacing": 10,
+                  "border": {
+                    "enabled": false,
+                    "width": 2,
+                    "padding": 0
+                  },
+                  "rows": []
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

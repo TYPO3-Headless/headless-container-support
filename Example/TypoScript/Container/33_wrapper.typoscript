@@ -1,0 +1,44 @@
+// default/general configuration (will add 'children_<colPos>' variable to processedData for each colPos in container
+tt_content.33_wrapper < lib.contentElement
+tt_content.33_wrapper {
+  fields {
+    content {
+      fields {
+
+        left = TEXT
+        left {
+          dataProcessing {
+            10 = Fanor51\HeadlesContainerSupport\DataProcessing\HeadlessContainerProcessor
+            10 {
+              colPos = 201
+              as = left
+            }
+          }
+        }
+
+        mid = TEXT
+        mid {
+          dataProcessing {
+            10 = Fanor51\HeadlesContainerSupport\DataProcessing\HeadlessContainerProcessor
+            10 {
+              colPos = 202
+              as = mid
+            }
+          }
+        }
+
+        right = TEXT
+        right {
+          dataProcessing {
+            10 = Fanor51\HeadlesContainerSupport\DataProcessing\HeadlessContainerProcessor
+            10 {
+              colPos = 203
+              as = right
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
