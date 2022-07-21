@@ -1,8 +1,8 @@
 # Headless Container Support (For TYPO3 v11)
-First of all, this is WIP. 
+First of all, this is WIP and needs tbd. This little extension was created because nothing else was there in the community.
 
 ## Install 
-Add this Repo to your root composer.json 
+Add this repo to your root composer.json 
 ```
 "repositories": {
     "2": {
@@ -16,11 +16,11 @@ and add the dependency to your require block.
 "fanor51/headless-container-support": "1.0.0"
 ``
 
-Or just copy the File ``Classes/DataProcessing/HeadlessContainerProcessor.php`` in your Project but dont forget to change the namespace ;).
+Or just copy the file ``Classes/DataProcessing/HeadlessContainerProcessor.php`` in your project but dont forget to change the namespace ;).
 
 ## Use 
 Take a look into ``Example/TypoScript/Container/50_wrapper.typoscript`` there is an example on how to configure the container. 
-The Special thing here is that we add a "new" data processor to the config. the processor is mainly the one from the container extension. Something was added only at the end
+The special thing here is that we add a "new" data processor to the config. the processor is mainly the one from the container extension. Something was added only at the end
 
 After this you need to overwrite the standard ``lib.content`` object with a where clause to exclude the "special" colPos´s from the container extension.
 ```
@@ -39,7 +39,7 @@ lib.content {
 }
 ```
 
-in this example we use the colPoses 201,202 and 203 for container contents which where setted in the container config under ``Configuration/TCA/Overrides/tt_content.php``.
+In this example we use the colPoses 201,202 and 203 for container contents which where setted in the container config under ``Configuration/TCA/Overrides/tt_content.php``.
 An example for this you can find here: ``Example/TCA/Overrides/tt_content.php``
 
 In the end it should look like this:

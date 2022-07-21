@@ -1,8 +1,8 @@
 {
   "name": "fanor51/headless-container-support",
-  "description": "Extension that adds container Support for Headless extension",
+  "description": "Extension that adds container support for TYPO3 Headless extension",
   "type": "typo3-cms-extension",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-3.0-or-later",
   "require": {
     "php": "^8.0",
     "typo3/cms-core": "^11.4",
