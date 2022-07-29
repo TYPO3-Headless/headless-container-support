@@ -7,13 +7,13 @@ Add this repo to your root composer.json
 "repositories": {
     "2": {
         "type": "vcs",
-        "url": "git@github.com:Fanor51/headless-container-support.git"
+        "url": "git@github.com:TYPO3-Headless/headless-container-support"
     }
 }
 ```
 and add the dependency to your require block.
 ``
-"fanor51/headless-container-support": "1.0.0"
+"fanor51/headless-container-support": "^1.0.0"
 ``
 
 Or just copy the file ``Classes/DataProcessing/HeadlessContainerProcessor.php`` in your project but dont forget to change the namespace ;).
@@ -47,3 +47,6 @@ In the end it should look like this:
 ![image description](Docs/Assets/img.png)
 
 A complete json example is under: ``Docs/Json/Example.json``
+
+## Credits
+The development of the extension was supported by the TYPO3 agency [brandung.com](https://www.agentur-brandung.de/).
