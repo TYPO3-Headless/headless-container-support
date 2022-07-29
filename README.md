@@ -1,5 +1,4 @@
 # Headless Container Support (For TYPO3 v11)
-First of all, this is WIP and needs tbd. This little extension was created because nothing else was there in the community.
 
 ## Install 
 Add this repo to your root composer.json 
@@ -48,5 +47,11 @@ In the end it should look like this:
 
 A complete json example is under: ``Docs/Json/Example.json``
 
+## Customize
+
+You can customize the names from the equivalent of the colPos in the TYPOSCRIPT like you need or want it.
+
+![image description](Docs/Assets/img_2.png)
+
 ## Credits
-The development of the extension was supported by the TYPO3 agency [brandung.com](https://www.agentur-brandung.de/).
+The development of the extension was supported by the TYPO3 agency [brandung GmbH](https://www.agentur-brandung.de/).
