@@ -10,16 +10,26 @@
     "friendsoftypo3/headless": "^3.0"
   },
   "require-dev": {
-    "roave/security-advisories": "dev-latest"
+    "roave/security-advisories": "dev-latest",
+    "friendsofphp/php-cs-fixer": "^3.1"
   },
   "extra": {
     "typo3/cms": {
       "extension-key": "headless_container_support"
     }
   },
+  "scripts": {
+    "ci:php:lint": "find *.php Classes Configuration -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l"
+  },
   "autoload": {
     "psr-4": {
       "Fanor51\\HeadlesContainerSupport\\": "Classes/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "typo3/cms-composer-installers": true,
+      "typo3/class-alias-loader": true
     }
   }
 }
