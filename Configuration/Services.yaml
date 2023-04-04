@@ -4,6 +4,6 @@ services:
     autoconfigure: true
     public: false
 
-  Fanor51\HeadlesContainerSupport\:
+  Fanor51\HeadlessContainerSupport\:
     resource: '../Classes/*'
     public: true
