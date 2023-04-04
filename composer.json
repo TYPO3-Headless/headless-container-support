@@ -23,7 +23,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Fanor51\\HeadlesContainerSupport\\": "Classes/"
+      "Fanor51\\HeadlessContainerSupport\\": "Classes/"
     }
   },
   "config": {

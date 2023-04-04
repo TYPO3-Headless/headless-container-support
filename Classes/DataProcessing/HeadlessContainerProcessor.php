@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Fanor51\HeadlesContainerSupport\DataProcessing;
+namespace Fanor51\HeadlessContainerSupport\DataProcessing;
 
 use B13\Container\DataProcessing\ContainerProcessor;
 use B13\Container\Domain\Factory\Exception;
