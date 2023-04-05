@@ -8,7 +8,7 @@ tt_content.33_wrapper {
         left = TEXT
         left {
           dataProcessing {
-            10 = Fanor51\HeadlesContainerSupport\DataProcessing\HeadlessContainerProcessor
+            10 = Fanor51\HeadlessContainerSupport\DataProcessing\HeadlessContainerProcessor
             10 {
               colPos = 201
               as = left
@@ -19,7 +19,7 @@ tt_content.33_wrapper {
         mid = TEXT
         mid {
           dataProcessing {
-            10 = Fanor51\HeadlesContainerSupport\DataProcessing\HeadlessContainerProcessor
+            10 = Fanor51\HeadlessContainerSupport\DataProcessing\HeadlessContainerProcessor
             10 {
               colPos = 202
               as = mid
@@ -30,7 +30,7 @@ tt_content.33_wrapper {
         right = TEXT
         right {
           dataProcessing {
-            10 = Fanor51\HeadlesContainerSupport\DataProcessing\HeadlessContainerProcessor
+            10 = Fanor51\HeadlessContainerSupport\DataProcessing\HeadlessContainerProcessor
             10 {
               colPos = 203
               as = right
