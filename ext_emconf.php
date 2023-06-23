@@ -9,7 +9,7 @@ $EM_CONF[$_EXTKEY] = [
     'version' => '1.0.0-beta',
     'constraints' => [
         'depends' => [
-            'typo3' => '11.5.0-11.5.99',
+            'typo3' => '11.5.0-12.99.9',
             'container' => '3.0.4-3.99.99',
             'headless' => '1.6.0-1.99.99',
         ]
