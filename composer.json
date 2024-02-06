@@ -7,7 +7,7 @@
     "php": "^8.0",
     "typo3/cms-core": "^11.5 || ^12.4",
     "b13/container": "^1.6 || ^2.0",
-    "friendsoftypo3/headless": "^3.0 || ^4.0"
+    "friendsoftypo3/headless": "^3.0 || ^4.0 || dev-master"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
