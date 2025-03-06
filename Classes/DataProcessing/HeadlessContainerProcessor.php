@@ -7,6 +7,7 @@ namespace Fanor51\HeadlessContainerSupport\DataProcessing;
 use B13\Container\DataProcessing\ContainerProcessor;
 use B13\Container\Domain\Factory\Exception;
 use FriendsOfTYPO3\Headless\DataProcessing\DataProcessingTrait;
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 
 class HeadlessContainerProcessor extends ContainerProcessor
@@ -41,7 +42,12 @@ class HeadlessContainerProcessor extends ContainerProcessor
         }
 
         try {
-            $container = $this->frontendContainerFactory->buildContainer($cObj, $this->context, $contentId);
+            $majorVersion = explode('.', ExtensionManagementUtility::getExtensionVersion('container'))[0];
+            if ((int)$majorVersion >= 3) {
+                $container = $this->frontendContainerFactory->buildContainer($cObj, $this->context, $contentId);
+            } else {
+                $container = $this->containerFactory->buildContainer($contentId);
+            }
         } catch (Exception $e) {
             // do nothing
             return $processedData;
