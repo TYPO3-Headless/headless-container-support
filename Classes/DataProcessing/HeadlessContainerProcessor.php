@@ -41,7 +41,7 @@ class HeadlessContainerProcessor extends ContainerProcessor
         }
 
         try {
-            $container = $this->containerFactory->buildContainer($contentId);
+            $container = $this->frontendContainerFactory->buildContainer($cObj, $this->context, $contentId);
         } catch (Exception $e) {
             // do nothing
             return $processedData;
