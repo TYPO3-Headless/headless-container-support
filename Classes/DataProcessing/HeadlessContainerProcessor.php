@@ -5,11 +5,13 @@ declare(strict_types=1);
 namespace Fanor51\HeadlessContainerSupport\DataProcessing;
 
 use B13\Container\DataProcessing\ContainerProcessor;
-use B13\Container\Domain\Factory\Exception;
 use FriendsOfTYPO3\Headless\DataProcessing\DataProcessingTrait;
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
+use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
 
-class HeadlessContainerProcessor extends ContainerProcessor
+class HeadlessContainerProcessor implements DataProcessorInterface
 {
     use DataProcessingTrait;
 
@@ -28,63 +30,20 @@ class HeadlessContainerProcessor extends ContainerProcessor
         array $processorConfiguration,
         array $processedData
     ): array {
-        if (isset($processorConfiguration['if.']) && !$cObj->checkIf($processorConfiguration['if.'])) {
-            return $processedData;
-        }
-        if ($processorConfiguration['contentId.'] ?? false) {
-            $contentId = (int)$cObj->stdWrap($processorConfiguration['contentId'],
-                $processorConfiguration['contentId.']);
-        } elseif ($processorConfiguration['contentId'] ?? false) {
-            $contentId = (int)$processorConfiguration['contentId'];
-        } else {
-            $contentId = (int)$cObj->data['uid'];
-        }
 
-        try {
-            $container = $this->containerFactory->buildContainer($contentId);
-        } catch (Exception $e) {
-            // do nothing
-            return $processedData;
+        $processedData = GeneralUtility::makeInstance(ContainerProcessor::class)->process(
+            $cObj,
+            $contentObjectConfiguration,
+            $processorConfiguration,
+            $processedData
+        );
+
+        $as = $cObj->stdWrapValue('as', $processorConfiguration, 'children');
+        $temp = [];
+        foreach ($processedData[$as] as $contentElement) {
+            $temp[] = \json_decode($contentElement['renderedContent'], true, 512, JSON_THROW_ON_ERROR);
         }
-
-        if (empty($processorConfiguration['colPos']) && empty($processorConfiguration['colPos.'])) {
-            $allColPos = $container->getChildrenColPos();
-            foreach ($allColPos as $colPos) {
-                $processedData = $this->processColPos(
-                    $cObj,
-                    $container,
-                    $colPos,
-                    'children_' . $colPos,
-                    $processedData,
-                    $processorConfiguration
-                );
-            }
-        } else {
-            if ($processorConfiguration['colPos.'] ?? null) {
-                $colPos = (int)$cObj->stdWrap($processorConfiguration['colPos'], $processorConfiguration['colPos.']);
-            } else {
-                $colPos = (int)$processorConfiguration['colPos'];
-            }
-            $as = 'children';
-            if ($processorConfiguration['as']) {
-                $as = $processorConfiguration['as'];
-            }
-
-            $processedData = $this->processColPos(
-                $cObj,
-                $container,
-                $colPos,
-                $as,
-                $processedData,
-                $processorConfiguration
-            );
-
-            $temp = [];
-            foreach ($processedData[$as] as $contentElement) {
-                $temp[] = \json_decode($contentElement['renderedContent'], true, 512, JSON_THROW_ON_ERROR);
-            }
-            $processedData[$as] = $temp;
-        }
+        $processedData[$as] = $temp;
 
         return $this->removeDataIfnotAppendInConfiguration($processorConfiguration, $processedData);
     }
