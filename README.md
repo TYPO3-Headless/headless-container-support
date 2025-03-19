@@ -1,4 +1,4 @@
-# Headless Container Support (For TYPO3 v11/v12)
+# Headless Container Support (For TYPO3 v11/v12/v13)
 
 ## Install 
 
@@ -6,9 +6,9 @@ Install as any other extension:
 
 - *Composer*: `composer require fanor51/headless-container-support`
 
-TYPO3 Version | v11 | v12 
---- |-----| --- 
-This Version | 2.* | 3.* 
+TYPO3 Version | v11 | v12 | v13
+--- |-----| --- | --- 
+This Version | 2.* | 3.* | ^3.2
 
 ## Use 
 Take a look into ``Example/TypoScript/Container/50_wrapper.typoscript`` there is an example on how to configure the container. 
